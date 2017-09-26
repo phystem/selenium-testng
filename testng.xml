@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+	<parameter name="dataFile" value="Book1.xlsx" />
+	<parameter name="url" value="https://www.bing.com" />
+	
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="tests.HomeTest" />
+		</classes>
+	</test>
+	
+	<test name="IETest">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="tests.HomeTest" />
+		</classes>
+	</test>
+	
+	 <!-- Test -->
+</suite> <!-- Suite -->
